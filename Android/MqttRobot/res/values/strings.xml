@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mqtt Robot</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_ir">IR</string>
+    <string name="action_dev">Dev</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

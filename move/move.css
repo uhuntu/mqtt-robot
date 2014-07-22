@@ -1,0 +1,79 @@
+.tile0
+{
+   position:absolute; 
+   background-color:#335599;
+   width:32;
+   height:32;
+   border:0px;
+   border-style:solid;
+   border-width:0px;
+   border-color:#bfbfbf;
+}
+.tile1
+{
+   position:absolute; 
+   background-color:#e3e3e3;
+   width:32;
+   height:32;
+   border:1px;
+   border-style:solid;
+   border-width:1px;
+   border-color:#bfbfbf;
+   border-top:0px;
+   border-top-style:solid;
+   border-top-width:1px;
+   border-top-color:#bfbfbf;
+   border-left:1px;
+   border-left-style:solid;
+   border-left-width:1px;
+   border-left-color:#bfbfbf;
+}
+.tile2
+{
+   position:absolute; 
+   background-color:yellow;
+   width:32;
+   height:32;
+   border:1px;
+   border-style:solid;
+   border-width:1px;
+   border-color:#bfbfbf;
+   border-top:0px;
+   border-top-style:solid;
+   border-top-width:1px;
+   border-top-color:#bfbfbf;
+   border-left:1px;
+   border-left-style:solid;
+   border-left-width:1px;
+   border-left-color:#bfbfbf;
+}
+.player
+{
+   position:absolute; 
+   background-color:#ff00ff;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0; 
+   width:32;
+   height:32;
+   border:1px;
+   border-style:solid;
+   border-width:1px;
+   border-color:#bfbfbf;
+}
+.deviceTV
+{
+   position:absolute; 
+   background-color:#ff00ff;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0; 
+   width:32;
+   height:32;
+   border:1px;
+   border-style:solid;
+   border-width:1px;
+   border-color:#bfbfbf;
+}

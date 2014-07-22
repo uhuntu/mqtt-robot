@@ -1,0 +1,87 @@
+$def with (name)
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="/static/jquery.min.js"></script>
+<script>
+$$(document).ready(function(){
+/*
+  $$("button").click(function(){
+    $$.get("/test",function(data,status){
+      alert("数据：" + data + "\n状态：" + status);
+    });
+  });
+*/
+  $$('#btnMove')
+    .mousedown(function(){
+      $$.get("/play", {action : "move"});
+    })
+	.mouseup(function(){
+      $$.get("/play", {action : "stop"});
+	});
+  $$('#btnLeft')
+    .mousedown(function(){
+      $$.get("/play", {action : "left"});
+    })
+	.mouseup(function(){
+      $$.get("/play", {action : "stop"});
+	});
+  $$('#btnTest')
+    .click(function(){
+      $$.get("/play", {action : "test"}, function(data, status){
+//        alert("data = " + data + "\nstatus = " + status);
+      });
+    });
+  $$('#btnRight')
+    .mousedown(function(){
+      $$.get("/play", {action : "right"});
+    })
+	.mouseup(function(){
+      $$.get("/play", {action : "stop"});
+	});
+  $$('#btnBack')
+    .mousedown(function(){
+      $$.get("/play", {action : "back"});
+    })
+	.mouseup(function(){
+      $$.get("/play", {action : "stop"});
+	});
+});
+</script>
+</head>
+<body>
+
+<!--
+$if name:
+    I just wanted to say <em>hello</em> to $name.
+$else:
+    <em>Hello</em>, world!
+
+<button>向页面发送 HTTP GET 请求，然后获得返回的结果</button>
+-->
+
+<table>
+<tr>
+<td align="center">
+<button id='btnMove'>Move</button>
+</td>
+</tr>
+<tr>
+<td>
+<button id='btnLeft'>Left</button>
+<button id='btnTest'>Test</button>
+<button id='btnRight'>Right</button>
+</td>
+</tr>
+<tr>
+<td align="center">
+<button id='btnBack'>Back</button>
+</td>
+</tr>
+</table>
+
+<img src="http://192.168.11.1:8080/?action=stream" />
+
+</body>
+</html>
